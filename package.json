@@ -1,0 +1,29 @@
+{
+  "name": "odele",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.3.1",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "chart.js": "^3.9.1",
+    "date-fns": "^2.29.3",
+    "framer-motion": "^6",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-chartjs-2": "^4.3.1",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "react-table": "^7.8.0"
+  },
+  "devDependencies": {
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5"
+  }
+}
