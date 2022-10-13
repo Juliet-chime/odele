@@ -41,7 +41,7 @@ const DashboardLayout = ({children}) => {
         return (
     <>
      <CustomModal
-     MaxW={'58rem'}
+      MaxW={'58rem'}
       modalBody={<About/>}
       isopen={isOpen}
       onclose={onClose}

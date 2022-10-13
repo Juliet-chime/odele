@@ -21,6 +21,29 @@ const GlobalStyle = () => (
             text-decoration: none;
           }
 
+          .scheduleDateInput {
+            background: #0B0B0B;
+            border: 1px solid #353535;
+            border-radius: 2.375rem;
+            padding: 2rem;
+            width: 100%;
+            height:3.5rem; 
+          }
+
+          ::placeholder {
+            font-size: 14px;
+            color: #6E7191;
+        }
+
+        .css-stz3g1[aria-invalid=true], .css-stz3g1[data-invalid] {
+          border-color: none !important;
+          box-shadow: none !important;
+      }
+
+          // .scheduleDateInput &:focus{
+          //   border:'1px solid #353535';
+          // }
+
           // table {
           //   /* font-family: Arial, Helvetica, sans-serif; */
           //   border-collapse: collapse;

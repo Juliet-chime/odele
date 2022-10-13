@@ -1,9 +1,9 @@
 import { FormControl, FormLabel, Select } from '@chakra-ui/react'
 import React from 'react'
 
-const FormSelect = ({icon,label,placeholder,optionsData,onChange,value,selectStyle}) => {
+const FormSelect = ({icon,label,placeholder,optionsData,onChange,value,formControlStyle,selectStyle}) => {
   return (
-    <FormControl>
+    <FormControl {...formControlStyle}>
     <FormLabel>{label}</FormLabel>
     <Select
     cursor='pointer'

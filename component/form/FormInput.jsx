@@ -3,7 +3,7 @@ import { Input, InputGroup, InputRightElement } from '@chakra-ui/input'
 import { FormErrorMessage, InputLeftElement } from '@chakra-ui/react'
 
 
-export const FormInput = ({value,onChange, id,name, label,type, placeholder, helperText, errorText, outerProps, leftIcon, rightIcon,iconColor, labelProps, isDisabled, leftElement, rightElement, ...props }) => {
+export const FormInput = ({value,onChange, id,name,placeholderStyle, label,type, placeholder, helperText, errorText, outerProps, leftIcon, rightIcon,iconColor, labelProps, isDisabled, leftElement, rightElement, borderRadius, rightElementStyle, ...props }) => {
 
     const isError = value === ''
 
@@ -29,16 +29,16 @@ export const FormInput = ({value,onChange, id,name, label,type, placeholder, hel
              name={name}
              placeholder={placeholder}
              w="full"
-             rounded="2.375rem"
+             rounded={borderRadius || "2.375rem"}
              height={12}
-              _placeholder={{ fontSize: 'xs',color:'#636363' }}
+              _placeholder={{ fontSize: 'xs',color:'#636363',...placeholderStyle }}
             //   _hover={{ borderColor: 'p' }}
               _focus={{border:"none" }}
               isDisabled={isDisabled}
               {...props}
             />
             {rightElement && (
-              <InputRightElement position={'absolute'} top={'5px'} right={'2px'}>
+              <InputRightElement position={'absolute'} top={'5px'} right={'2px'} {...rightElementStyle}>
                {rightIcon}
               </InputRightElement>
             )}
