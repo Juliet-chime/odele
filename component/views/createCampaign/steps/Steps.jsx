@@ -5,7 +5,7 @@ const Steps = ({ item, index, currentStep }) => {
     return (
 
         <>
-            {item.map((items, index) => (
+            {item?.map((items, index) => (
                 <>
                     <Flex
                         alignItems={'center'}

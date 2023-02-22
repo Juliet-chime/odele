@@ -1,29 +1,34 @@
-import { Flex, Radio, RadioGroup, Stack, Text } from '@chakra-ui/react'
+import { Box, Flex, Radio, RadioGroup, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
+import ChakraNextImage from '../chakraNextImage/ChakaraNextImage'
 
-const FormRadio = ({showText,value,onChange,radioOption, isChecked,id,isDisabled,name,isRequired,size,colorscheme,radioGroupStyle,radioStyle}) => {
+const FormRadio = ({showText,flexWrapper,gap,alignItems,justifyContent,label,showImg,fontSize,radioWrapperStyle,value,onChange,radioOption, isChecked,id,isDisabled,name,isRequired,size,colorscheme,radioGroupStyle,radioStyle}) => {
     return (
       <RadioGroup onChange={onChange} value={value} name={name} {...radioGroupStyle}>
-        <Stack direction='row'>
+        <Flex flexWrap={'wrap'} gap={gap} alignItems={alignItems} justifyContent={justifyContent}>
             {radioOption.map((option,index) => (
-                <Flex key={index}>
+              <Box key={index} {...radioWrapperStyle}>
+                <Flex alignItems='center' {...flexWrapper}>
                 {showText && <Text>{option}</Text>}
+                <Box {...radioStyle}>
                 <Radio 
                 id={id}
-                fontSize={'1rem'}
+                fontSize={fontSize || '1rem'}
                 colorScheme={colorscheme}
                 size={size}
                 isRequired={isRequired}
                 isDisabled={isDisabled}
                 isChecked={isChecked}
                 value={option}
-                {...radioStyle}
                 >
-                    {option}
+                    {label || option}
                 </Radio>
+                </Box>
                 </Flex>
+                {showImg && <ChakraNextImage src={showImg}/>}
+                </Box>
             ))}
-        </Stack>
+        </Flex>
       </RadioGroup>
     )
 }

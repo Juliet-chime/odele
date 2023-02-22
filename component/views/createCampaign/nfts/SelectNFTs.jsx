@@ -1,5 +1,6 @@
 import CustomButton from '@/component/button/CustomButton'
 import ComponentPagination from '@/component/componentPagination/ComponentPagination'
+import FormCustomCheckBox from '@/component/form/FormCustomCheckbox'
 //import { nftCollection } from '@/component/data'
 import FormInput from '@/component/form/FormInput'
 import HeaderTitle from '@/component/Heading/Heading'
@@ -55,6 +56,9 @@ console.log(nftCollection)
           RenderComponent={SelectNftCard}
           pageLimit={10}
           dataLimit={5}
+          next
+          showTotalLength
+          totalText={'in total'}
         />
            </SimpleGrid>
         </Box>

@@ -1,8 +1,5 @@
 import React from 'react';
-//import classnames from 'classnames';
 import { usePagination } from '../hooks/usePagination/usePagination';
-//import { usePagination, DOTS } from './usePagination';
-//import './pagination.scss';
 
 const CustomizedPagination = props => {
   const {
@@ -36,14 +33,9 @@ const CustomizedPagination = props => {
 
   let lastPage = paginationRange[paginationRange.length - 1];
   return (
-    <ul
-      //className={classnames('pagination-container', { [className]: className })}
-    >
+    <ul>
        {/* Left navigation arrow */}
       <li
-        // className={classnames('pagination-item', {
-        //   disabled: currentPage === 1
-        // })}
         onClick={onPrevious}
       >
         <div className="arrow left" />
@@ -53,9 +45,7 @@ const CustomizedPagination = props => {
         // If the pageItem is a DOT, render the DOTS unicode character
         if (pageNumber === '...') {
           return <>
-    <li 
-    //className="pagination-item dots"
-    >
+    <li>
     &#8230;</li>
              </>;
         }
@@ -63,24 +53,14 @@ const CustomizedPagination = props => {
         // Render our Page Pills
         return (
           <>
-          <li
-            // className={classnames('pagination-item', {
-            //   selected: pageNumber === currentPage
-            // })}
-            onClick={() => onPageChange(pageNumber)}
-          >
+          <li onClick={() => onPageChange(pageNumber)}>
             {pageNumber}
           </li>
           </>
         );
       })}
       {/*  Right Navigation arrow */}
-      <li
-        // className={classnames('pagination-item', {
-        //   disabled: currentPage === lastPage
-        // })}
-        onClick={onNext}
-      >
+      <li onClick={onNext}>
         <div className="arrow right" />
       </li>
     </ul>

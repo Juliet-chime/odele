@@ -103,6 +103,20 @@ export const sideBarMenu = [
       }
 
 ]
+ export const createCampaignMenu = [
+  {
+    link : '/createCampaign',
+    title: ''
+  },
+  {
+    link : '/review',
+    title: 'Review'
+  },
+  {
+    link : '/launchCampaign',
+    title: 'Launch Campaign'
+  },
+]
 
 export const syncedNFT = [
   
@@ -713,7 +727,10 @@ export const nftCollection = [
    price:0.09,
    type:'Single',
    title:'Honeyfox',
-   text:'molax honey fox tale'
+   text:'molax honey fox tale',
+   cta:'Proin porta, metus et tempus pulvinar velit',
+   url:'http:opensea.io/092kj-Token209RE',
+   description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
   },
   {
     image:dog,
@@ -721,14 +738,18 @@ export const nftCollection = [
     type:'Collection',
     total:9,
     title:'Honeyfox',
-    text:'molax honey fox tale'
+    cta:'Proin porta, metus et tempus pulvinar velit',
+    url:'http:opensea.io/092kj-Token209RE',
+    description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
    },
    {
     image:honeyFox,
     price:0.09,
     type:'Single',
     title:'Honeyfox',
-    text:'molax honey fox tale'
+    cta:'Proin porta, metus et tempus pulvinar velit',
+    url:'http:opensea.io/092kj-Token209RE',
+    description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
    },
    {
     image:chimp,
@@ -736,14 +757,19 @@ export const nftCollection = [
     type:'Collection',
     total:9,
     title:'Honeyfox',
-    text:'molax honey fox tale'
+    cta:'Proin porta, metus et tempus pulvinar velit',
+    url:'http:opensea.io/092kj-Token209RE',
+    description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
    },
    {
      image:dog,
      price:0.09,
      type:'Single',
      title:'Honeyfox',
-     text:'molax honey fox tale'
+     text:'molax honey fox tale',
+     cta:'Proin porta, metus et tempus pulvinar velit',
+     url:'http:opensea.io/092kj-Token209RE',
+     description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
     },
     {
      image:honeyFox,
@@ -751,14 +777,20 @@ export const nftCollection = [
      type:'Collection',
      total:9,
      title:'Honeyfox',
-     text:'molax honey fox tale'
+     text:'molax honey fox tale',
+     cta:'Proin porta, metus et tempus pulvinar velit',
+     url:'http:opensea.io/092kj-Token209RE',
+     description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
     },
     {
       image:chimp,
       price:0.09,
       type:'Single',
       title:'Honeyfox',
-      text:'molax honey fox tale'
+      text:'molax honey fox tale',
+      cta:'Proin porta, metus et tempus pulvinar velit',
+      url:'http:opensea.io/092kj-Token209RE',
+      description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
      },
      {
        image:dog,
@@ -766,14 +798,20 @@ export const nftCollection = [
        type:'Collection',
        total:9,
        title:'Honeyfox',
-       text:'molax honey fox tale'
+       text:'molax honey fox tale',
+       cta:'Proin porta, metus et tempus pulvinar velit',
+       url:'http:opensea.io/092kj-Token209RE',
+       description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
       },
       {
        image:honeyFox,
        price:0.09,
        type:'Single',
        title:'Honeyfox',
-       text:'molax honey fox tale'
+       text:'molax honey fox tale',
+       cta:'Proin porta, metus et tempus pulvinar velit',
+       url:'http:opensea.io/092kj-Token209RE',
+       description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
       },
       {
         image:chimp,
@@ -781,14 +819,20 @@ export const nftCollection = [
         type:'Collection',
         total:9,
         title:'Honeyfox',
-        text:'molax honey fox tale'
+        text:'molax honey fox tale',
+        cta:'Proin porta, metus et tempus pulvinar velit',
+        url:'http:opensea.io/092kj-Token209RE',
+        description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
        },
        {
          image:dog,
          price:0.09,
          type:'Single',
          title:'Honeyfox',
-         text:'molax honey fox tale'
+         text:'molax honey fox tale',
+         cta:'Proin porta, metus et tempus pulvinar velit',
+         url:'http:opensea.io/092kj-Token209RE',
+         description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
         },
         {
          image:honeyFox,
@@ -796,14 +840,20 @@ export const nftCollection = [
          type:'Collection',
          total:9,
          title:'Honeyfox',
-         text:'molax honey fox tale'
+         text:'molax honey fox tale',
+         cta:'Proin porta, metus et tempus pulvinar velit',
+         url:'http:opensea.io/092kj-Token209RE',
+         description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
         },
         {
           image:chimp,
           price:0.09,
           type:'Single',
           title:'Honeyfox',
-   text:'molax honey fox tale'
+   text:'molax honey fox tale',
+   cta:'Proin porta, metus et tempus pulvinar velit',
+   url:'http:opensea.io/092kj-Token209RE',
+   description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
          },
          {
            image:dog,
@@ -811,14 +861,20 @@ export const nftCollection = [
            total:9,
            type:'Collection',
            title:'Honeyfox',
-   text:'molax honey fox tale'
+   text:'molax honey fox tale',
+   cta:'Proin porta, metus et tempus pulvinar velit',
+   url:'http:opensea.io/092kj-Token209RE',
+   description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
           },
           {
            image:honeyFox,
            price:0.09,
            type:'Single',
            title:'Honeyfox',
-   text:'molax honey fox tale'
+   text:'molax honey fox tale',
+   cta:'Proin porta, metus et tempus pulvinar velit',
+   url:'http:opensea.io/092kj-Token209RE',
+   description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
           },
           {
             image:chimp,
@@ -826,14 +882,20 @@ export const nftCollection = [
             type:'Collection',
             total:9,
             title:'Honeyfox',
-   text:'molax honey fox tale'
+   text:'molax honey fox tale',
+   cta:'Proin porta, metus et tempus pulvinar velit',
+   url:'http:opensea.io/092kj-Token209RE',
+   description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
            },
            {
              image:dog,
              price:0.09,
              type:'Single',
              title:'Honeyfox',
-   text:'molax honey fox tale'
+   text:'molax honey fox tale',
+   cta:'Proin porta, metus et tempus pulvinar velit',
+   url:'http:opensea.io/092kj-Token209RE',
+   description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
             },
             {
              image:honeyFox,
@@ -841,6 +903,9 @@ export const nftCollection = [
              type:'Collection',
              total:9,
              title:'Honeyfox',
-   text:'molax honey fox tale'
+   text:'molax honey fox tale',
+   cta:'Proin porta, metus et tempus pulvinar velit',
+   url:'http:opensea.io/092kj-Token209RE',
+   description:'Etiam rutrum aliquam pretium. Etiam tincidunt egestas lobortis. Curabitur ornare condimentum dolor non aliquam. Nam aliquet, est quis iaculis porttitor, est erat tristique turpis.'
             },
 ]

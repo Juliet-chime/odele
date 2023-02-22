@@ -5,9 +5,17 @@ import { Box, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
 import { BsInfoCircle } from 'react-icons/bs'
 import good from '../../../../public/images/icons/good.png'
+import NftFormHeader from './NftFormHeader'
+import campaignNft from '../../../../public/images/pictures/campaignNft.png'
+import FormTextarea from '@/component/form/FormTextArea'
 
 const NftForm = ({ dataValue, onFieldchange }) => {
+    const onSave = () => {
+        setListNfts([...listNfts,{id:listNfts.length + 1, price:formValue.price,cts:formValue.cta,url:formValue.url}])
+      }
     return (
+        <>
+        <NftFormHeader campaignNft={campaignNft} onSave={onSave}/>
         <form>
             <Box mt={'2.5rem'}>
                 <Flex alignItems={'center'} gap='0.5rem' mb={'0.5rem'}>
@@ -19,6 +27,7 @@ const NftForm = ({ dataValue, onFieldchange }) => {
                     border='1px solid #353535'
                     w={{ base: '100%', md: '30%' }}
                     borderRadius={'2.375rem'}
+                    bg={'#0B0B0B'}
                     p={'0.2rem'}>
                     <Box
                         w={'5.438rem'}
@@ -33,7 +42,7 @@ const NftForm = ({ dataValue, onFieldchange }) => {
 
                     <FormInput
                         type={'number'}
-                        value={dataValue.price}
+                        // value={dataValue.price}
                         name='price'
                         onChange={onFieldchange}
                         // label={
@@ -43,20 +52,21 @@ const NftForm = ({ dataValue, onFieldchange }) => {
                         //     </Flex>
                         // }
                         placeholder={'Enter your daily budget'}
-                        placeholderStyle={{ pl: { base: '3.8rem', md: '5rem' } }}
+                        placeholderStyle={{ pl: { base: '1rem', md: '2.5rem' },color:'#393939' }}
                         labelProps={{ color: '#636363', fontSize: '1rem' }}
                         fontSize={'1rem'}
                         // p={'0.5rem'}
                         border='none'
                     />
-                </Flex>
+                </Flex><br/>
 
-                <Flex>
-                   <Box>
+                <Flex gap='2rem' direction={{base:'column',md:'row'}}>
+                   <Box flex={{base:0,md:1}}>
                    <FormInput
                         label={'CTA'}
                         name={'cta'}
-                        value={dataValue.cta}
+                        // value={dataValue.cta}
+                        placeholderStyle={{color:'#393939' }}
                         onChange={onFieldchange}
                         placeholder={'Enter call to action'}
                         labelProps={{ color: '#636363', fontSize: '1rem' }}
@@ -66,26 +76,43 @@ const NftForm = ({ dataValue, onFieldchange }) => {
                     />
                    </Box>
 
-                    <Box flex={1} position={'relative'}>
+                    <Box flex={{base:0,md:1.5}} position={'relative'}>
                     <FormInput
                         label={'Destination URL'}
                         name={'cta'}
-                        value={dataValue.url}
+                        // value={dataValue.url}
                         onChange={onFieldchange}
                         placeholder={'http:opensea.io/092kj-Token209RE..'}
                         labelProps={{ color: '#636363', fontSize: '1rem' }}
+                        placeholderStyle={{color:'#393939' }}
                         p={'2rem'}
                         border='1px solid #353535'
                         bg={'#0B0B0B'}
                     />
-                   <Flex position={'absolute'} right={0} top={8} alignItems={'center'} gap={'0.5rem'}>
+                   <Flex position={'absolute'} right={{base:2,md:3}} top={{base:0,md:6}} bottom={{base:-7,md:0}} alignItems={'center'} gap={'0.5rem'}>
                    <ChakraNextImage src={good}/>
-                    <CustomButton text={'Reset default'} border='2px solid #727272' w={'8.563rem'} fontSize={'1rem'}/>
+                    <CustomButton text={'Reset default'} border='2px solid #727272' w={'8.563rem'} fontSize={'1rem'} display={{base:'none',md:'block'}}/>
                    </Flex>
                     </Box>
+                </Flex><br/>
+                <Flex>
+                    <FormTextarea 
+                    label={'NFT description'} 
+                    p={'2rem'}
+                    border='1px solid #353535'
+                    bg={'#0B0B0B'}
+                    height='10rem'
+                    labelProps={{ color: '#636363', fontSize: '1rem' }}
+                    placeholder='Enter your NFT description'
+                    placeholderStyle={{pt:'2rem',color:'#393939' }}
+                    //value={dataValue.message}
+                    onChange={onFieldchange}
+                    name='message'
+                    />
                 </Flex>
             </Box>
         </form>
+        </>
     )
 }
 

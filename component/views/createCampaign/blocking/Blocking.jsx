@@ -1,22 +1,42 @@
 import CustomButton from '@/component/button/CustomButton'
 import FormRadio from '@/component/form/FormRadio'
 import { Box, Flex } from '@chakra-ui/react'
-import React from 'react'
+import React, { useState } from 'react'
 import CreateCampaignHeader from '../CreateCampaignHeader'
 
 const Blocking = ({next,previous}) => {
 
-  const radioOption = ['All', 'Age Range']
+  const radioOption = ['Facebook','Discord','YouTube','Twitter']
+
+  const [isChecked, setIsChecked] = useState(false)
 
   return (
-<Box>
+    <Box>
     <CreateCampaignHeader title={'Blocking'} />
 
-    <Flex>
-<Box border='2px solid #353535' borderRadius='1.5rem'  px={'1rem'} 
-           py={'0.5rem'}>
-              {/* <FormRadio showText value={radioValue} onChange={setradioValue} radioOption={radioOption} size='md' colorscheme={'purple'}/> */}
-            </Box>
+    <Flex
+    border='2px solid #202020'
+    boxShadow='0px 10px 24px rgba(0, 0, 0, 0.18)'
+    borderRadius='1.125rem'
+    p='2.25rem'
+    mt="1rem"
+    >
+       <FormRadio 
+       radioOption={radioOption}
+       showText label={isChecked ? 'Blocked': 'Block'} 
+       isChecked={isChecked} 
+       onChange={()=>setIsChecked(!isChecked)}
+       size={'sm'}
+       radioStyle={{
+        border: '2px solid #202020',
+        borderRadius: '1.5rem',
+        padding:'0.3rem 1.2rem',
+        marginRight:'1rem'
+        }}
+        flexWrapper={{
+          gap:'0.5rem',
+        }}
+        />
     </Flex>
          <Flex justifyContent={'center'} gap={'1rem'} mt={'2rem'}>
          <CustomButton text={'Discard'} bg={'#404040'} width={{ base: "100%", md: '10rem' }} fontSize={{base:'0.5rem',md:'1rem'}} fontWeight={'500'} onClick={previous} />

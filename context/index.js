@@ -12,8 +12,9 @@ export const AppContextProvider = ({children}) => {
     const [activeIndex , setActiveIndex] = useState(1)
     const [activeNftCard , setActiveNftCard] = useState(0)
     const [resizeSidebar, setResizeSideBar] = useState(true)
+    const [currentStep, SetCurrentStep] = useState(0)
 
-return (<AppContext.Provider value={{isactive,setIsActive,screenSize,setscreenSize,activeIndex,setActiveIndex,resizeSidebar,setResizeSideBar,activeNftCard,setActiveNftCard}}>
+return (<AppContext.Provider value={{isactive,setIsActive,screenSize,setscreenSize,activeIndex,setActiveIndex,resizeSidebar,setResizeSideBar,activeNftCard,setActiveNftCard,currentStep, SetCurrentStep}}>
     {children}
 </AppContext.Provider>)
 }
